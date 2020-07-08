@@ -1,0 +1,43 @@
+{
+    "OrcLow": {
+        "name": "Orc",
+        "heal_point": 100,
+        "type": "Axe",
+        "agresive": true,
+        "drop": [
+            ["100%", "money", [2, 10]]
+        ],
+        "skils":[
+            {
+                "name": "Standart",
+                "image": "Mob",
+                "speed": 3000,
+                "radius": 50,
+                "atacks_point": 10,
+                "sprite": [
+                    [0,4],[1,4],[2,4],[3,4]
+                ],
+                "sprite_width": 40,
+                "sprite_height": 73
+            }
+        ],
+        "move": {
+            "image": "Mob",
+            "sprite":{
+                "LeftMove": [
+                    [0,0],[1,0],[2,0],[3,0]
+                ],
+                "RightMove": [
+                    [0,1],[1,1],[2,1],[3,1]
+                ],
+                "AtackStandart": [
+                    [0,2],[1,2],[2,2],[3,2]
+                ],
+                "Stay": [
+                    [0,3],[1,3],[2,3],[3,3]
+                ]
+            },
+            "speed": 5
+        }
+    }
+}
