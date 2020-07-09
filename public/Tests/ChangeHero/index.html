@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Change Hero</title>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+        <button onclick=ChangeSword(-1)> <-- </button>
+        <button onclick=ChangeSword(+1)> --> </button>
+        <script src="loadSprites.js"></script>
+        <script src="script.js"></script>
+        <style>
+            canvas{
+                width: 100%;
+                image-rendering: pixelated;
+            }
+            button{
+                width:120px;
+                height:40px;
+                font-size:35px;
+            }
+        </style>
+    </body>
+</html>

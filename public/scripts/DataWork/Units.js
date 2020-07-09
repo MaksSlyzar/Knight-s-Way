@@ -1,14 +1,18 @@
 class Units{
     GlobalData = null;
     constructor() {
-        $.getJSON( "../GlobalData/Units.json", function( data ) {
-            this.GlobalData = data;
-            console.log("Data taking succesfully");
-            console.log("Taked object");
-            console.log(this.GlobalData);
+        var LocalData = null;
+        $.ajax({
+            url: '../GlobalData/Units.json',
+            async: false,
+            dataType: 'json',
+            success: function (response) {
+              LocalData = response;
+            }
         });
+        this.GlobalData = LocalData;
     }
     getData(name) {
-        return this.data[name];
+        return this.GlobalData[name];
     }
 }
